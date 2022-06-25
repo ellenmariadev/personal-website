@@ -27,7 +27,7 @@ header {
   font-family: "Space Mono", monospace;
   font-size: 1rem;
   padding: 20px 10px;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 a {
@@ -41,6 +41,7 @@ nav {
   justify-content: space-between;
   max-width: 1080px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 ul {
@@ -74,7 +75,7 @@ main {
 }
 
 #resume::before {
-  content: url("./img/box-arrow-up-right.svg");
+  content: url("../img/box-arrow-up-right.svg");
   margin-right: 5px;
 }
 
@@ -94,8 +95,8 @@ h2 {
 
 .about-info {
   display: flex;
+  flex-wrap: wrap;
   gap: 50px;
-  margin-bottom: 2rem;
   font-size: 0.875rem;
   color: #000;
 }
@@ -111,11 +112,12 @@ h2 {
   font-family: "Space Mono", monospace;
   font-weight: 400;
   line-height: 1.5;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   font-size: 1.3rem;
 }
 
-h3 {
+h3,
+.skill-title {
   font-size: 1.3rem;
   margin-bottom: 0.875rem;
 }
@@ -150,7 +152,7 @@ section {
 }
 
 #projects {
-  padding: 40px 0;
+  padding: 40px 20px;
 }
 
 .project {
@@ -190,7 +192,7 @@ section {
 
 .contact h1 {
   color: #ff8ef4;
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 .contact a {
@@ -269,7 +271,7 @@ u:hover {
 #contact {
   font-family: "Space Mono", monospace;
 
-  padding: 40px 0 0 0;
+  padding: 40px 20px;
 }
 
 .repositories {
@@ -333,4 +335,61 @@ u:hover {
 
 .tags li a {
   color: rgba(0, 0, 0, 0.329);
+}
+
+@media (max-width: 600px) {
+  .skill-content {
+    grid-template-columns: 1fr;
+  }
+  .skill-title {
+    text-align: center;
+  }
+  .skills {
+    place-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .about-info {
+    gap: 20px;
+  }
+  #email {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .titulo {
+    font-size: 3rem;
+  }
+  .project p,
+  .p-about,
+  .contact p {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  .titulo-section {
+    font-size: 2rem;
+  }
+  .repositories {
+    grid-template-columns: 1fr;
+  }
+  #contact {
+    margin: 20px 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .titulo {
+    font-size: 2.5rem;
+  }
+  nav {
+    flex-direction: column;
+    place-content: center;
+  }
+
+  nav ul {
+    margin-top: 10px;
+  }
 }
