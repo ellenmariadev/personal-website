@@ -12,16 +12,18 @@
         href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700;900&family=Space+Mono:wght@400;700&display=swap"
         rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/352d096582.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./img/[ ].svg" type="image/x-icon">
+
     <link rel="stylesheet" href="style.css">
 
     <title>Ellen Maria's Portfolio</title>
 </head>
 
 <body>
-    <div class="vertical-line"></div>
     <header>
-        <nav>
-            <img src="./img/[[EM]].svg" alt="logo">
+        <nav fixed>
+            <img id="logo" src="./img/[[EM]].svg" alt="logo">
             <ul>
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
@@ -30,8 +32,9 @@
         </nav>
     </header>
 
-    <main>
-        <h5><a id="resume" href="#">Resumé</a></h5>
+    <main id="#about">
+        <h5><a id="resume" href="https://drive.google.com/file/d/1YivWVXHMHGp8yP9dccOlED5Z2axwjLgv/view" target="_blank"
+                rel="noopener noreferrer">Resumé</a></h5>
         <h1 class="titulo">[Ellen Maria]</h1>
         <h2>Front-End Developer & UI Designer</h2>
         <div class="about-info">
@@ -49,17 +52,16 @@
             </div>
         </div>
         <p class="p-about">I am web developer with experience building digital products with different technologies.
-            Currently my Stack of technologies has a JavaScript as main language, I like to develop solutions that meet
+            Currently my Stack of technologies has a JavaScript as main language, I like to develop solutions that
+            meet
             high quality metrics in terms of performance, accessibility and good practices. I am looking for job
             opportunities to grow professionally with an innovation team to provide solutions to different problems.
         </p>
         <div class="skills">
             <h3>[SKILLS]</h3>
-            <label for="dev">Development</label>
-            <input type="radio" name="dev" id="dev">
-            <label for="dev">Design</label>
-            <input type="radio" name="design" id="design">
-            <div class="dev-content">
+            <button class="btn-skills dev active">Development</button>
+            <button class="btn-skills design">Design</button>
+            <div class="skill-content devContent">
                 <div class="box">
                     <div>
                         <img src="./img/webdev.svg" alt="">
@@ -97,6 +99,35 @@
                     </div>
                 </div>
             </div>
+            <div class="skill-content designContent d-none">
+                <div class="box">
+                    <div>
+                        <img src="./img/uidesign.svg" alt="">
+                    </div>
+                    <div>
+                        <h4>UX/UI Design</h4>
+                        <p>Figma, Adobe XD</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <img src="./img/design.svg" alt="">
+                    </div>
+                    <div>
+                        <h4>Image Edition</h4>
+                        <p>Photoshop, Illustrator, Gimp</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <img src="./img/design.svg" alt="">
+                    </div>
+                    <div>
+                        <h4>Video Edition</h4>
+                        <p>Premiere, Filmora</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -106,17 +137,50 @@
             <p>Here's some of my projects that I have worked on.
                 Feel free to make a pull request!</p>
 
-            <p>See more in GitHub</p>
+            <div class="repositories">
+                <!-- <div class="repo">
+                    <ul class="repo-ul">
+                        <li class="repo-li">
+                            <h3>Repositorie Name(URL)</h3>
+                            <p>Description</p>
+                        </li>
+                    </ul>
+                    <ul class="tags">
+                        <li><a href="#"></a>DEMO</li>
+                        <li><a href="#"></a>DEMO</li>
+                    </ul>
+                </div> -->
+            </div>
+            <p class="git-link"><a href="https://github.com/ellenmariadev?tab=repositories" target="_blank"
+                    rel="noopener noreferrer"><u>
+                        See more in GitHub →</u></a></p>
         </div>
     </section>
 
     <footer id="contact">
-        <h1 class="titulo-section">[Contact]</h1>
-        <p>Feel free to reach out if you want to build something together, have a question, or just want to connect.</p>
-        <a href="#">ellenmariadev@gmail.com</a>
-        <p>You can follow me on <strong>Twitter</strong>, <strong>Linkedin</strong> and <strong>GitHub</strong>.</p>
-        <p class="copyright">© 2022 ELLEN MARIA </p>
+        <div class="contact">
+            <h1 class="titulo-section">[Contact]</h1>
+            <p>Feel free to reach out if you want to build something together, have a question, or just want to connect.
+            </p>
+            <a href="mailto:ellenmariadev@gmail.com"><u>ellenmariadev@gmail.com</u></a>
+            <p>You can follow me on
+
+                <a href="https://twitter.com/ellenmariadev/" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-twitter"></i> <strong><u>Twitter</u></a></strong>,
+
+
+                <a href="https://www.linkedin.com/in/ellenmariadev/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i><strong> <u>Linkedin</u>
+                </a></strong> and
+
+                <a href="https://github.com/ellenmariadev" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-github"> </i><strong> <u>GitHub</u></a></strong>.
+            </p>
+            <p class="copyright">© 2022 ELLEN MARIA </p>
+        </div>
     </footer>
+
+    <script src="main.js"></script>
 
 </body>
 

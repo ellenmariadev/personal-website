@@ -11,20 +11,16 @@ p {
   padding: 0;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Source Sans Pro", sans-serif;
   background-color: rgba(0, 0, 0, 0.1);
 }
-
-/* .vertical-line {
-  width: 1px;
-  background-color: black;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 130px;
-  z-index: -100;
-} */
 
 header {
   background-color: #222;
@@ -43,14 +39,21 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
 ul {
   list-style: none;
   display: flex;
+}
+
+nav ul {
   gap: 2rem;
+}
+
+nav a:hover {
+  text-decoration: 2px underline dashed #8aff96;
 }
 
 main {
@@ -71,7 +74,7 @@ main {
 }
 
 #resume::before {
-  content: url("box-arrow-up-right.svg");
+  content: url("./img/box-arrow-up-right.svg");
   margin-right: 5px;
 }
 
@@ -117,7 +120,7 @@ h3 {
   margin-bottom: 0.875rem;
 }
 
-.dev-content {
+.skill-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
@@ -146,14 +149,18 @@ section {
   background: #222;
 }
 
+#projects {
+  padding: 40px 0;
+}
+
 .project {
   max-width: 900px;
   margin: 0 auto;
-  padding: 100px 20px;
 }
 
 .project h1 {
   color: #8aff96;
+  padding: 3rem 0 2rem 0;
 }
 
 .project p {
@@ -162,30 +169,44 @@ section {
   font-size: 1.3rem;
 }
 
+.git-link {
+  text-align: center;
+}
+
+.git-link a {
+  font-size: 1rem;
+}
+
 .titulo-section {
   font-family: "Space Mono", monospace;
   font-size: 2.5rem;
 }
 
-footer {
+.contact {
   max-width: 900px;
   margin: 0 auto;
   font-size: 1.3rem;
-  padding: 0px 20px;
 }
 
-footer h1 {
+.contact h1 {
   color: #ff8ef4;
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
 
-footer a {
+.contact a {
   color: #000;
-  text-decoration: underline dashed #ff8ef4;
   font-weight: 700;
 }
 
-footer p {
+u {
+  text-decoration: underline dashed #ff8ef4;
+}
+
+u:hover {
+  text-decoration-color: #8aff96;
+}
+
+.contact p {
   margin: 10px 0;
 }
 
@@ -199,4 +220,117 @@ footer p {
   letter-spacing: 0.3em;
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.5);
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.fa-linkedin {
+  color: #0a66c2;
+}
+
+.btn-skills {
+  background: #d0d0d0;
+  border: 0.8px solid rgba(149, 149, 149, 0.4);
+  border-radius: 16.1953px;
+  padding: 4px 10px;
+  margin-bottom: 1rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: rgba(153, 152, 152, 0.56);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.btn-skills.dev.active {
+  background: #b7f0b5;
+  border: 0.809764px solid #37a74275;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+
+  color: #37a74275;
+}
+
+.btn-skills.design.active {
+  background: #efc3eb;
+  border: 0.809764px solid #ff8ef4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+
+  color: #fc83f0;
+}
+
+.d-none {
+  display: none;
+}
+
+#contact {
+  font-family: "Space Mono", monospace;
+
+  padding: 40px 0 0 0;
+}
+
+.repositories {
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+.repo {
+  background-color: rgba(0, 0, 0, 0.322);
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.repo-li h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.3em;
+  color: #fff;
+}
+
+.repo-li p {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+
+  color: #ffffff;
+}
+
+.tags li {
+  border-radius: 1rem;
+  padding: 1px 10px;
+  font-size: 0.7rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tags li:first-child {
+  background: #b7f0b5;
+  border: 0.809764px solid #37a74275;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+
+  margin-right: 0.875rem;
+}
+
+.tags li:last-child {
+  background: #efc3eb;
+  border: 0.809764px solid #ff8ef4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tags li a {
+  color: rgba(0, 0, 0, 0.329);
 }
