@@ -23,8 +23,8 @@
 <body>
     <header>
         <nav fixed>
-            <img id="logo" src="./img/[[EM]].svg" alt="logo">
-            <ul>
+            <a href="#"><img id="logo" src="./img/[[EM]].svg" alt="logo"></a>
+            <ul class="nav-ul">
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
@@ -32,100 +32,103 @@
         </nav>
     </header>
 
-    <main id="#about">
-        <h5><a id="resume" href="https://drive.google.com/file/d/1YivWVXHMHGp8yP9dccOlED5Z2axwjLgv/view" target="_blank"
-                rel="noopener noreferrer">Resumé</a></h5>
-        <h1 class="titulo">[Ellen Maria]</h1>
-        <h2>Front-End Developer & UI Designer</h2>
-        <div class="about-info">
-            <div>
-                <h4>Localization</h4>
-                <p>Bahia, Brazil</p>
-            </div>
-            <div>
-                <h4>Birthdate</h4>
-                <p>08/07/2002</p>
-            </div>
-            <div>
-                <h4>Language</h4>
-                <p>Portuguese BR | English</p>
-            </div>
-        </div>
-        <p class="p-about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores praesentium dignissimos,
-            vero minima, possimus totam consequatur eligendi reprehenderit impedit est tempora numquam sapiente nemo
-            animi quas! Ut in praesentium placeat tempore optio expedita ex, labore odit nulla temporibus ducimus eaque
-            enim totam incidunt, ratione eveniet! Voluptate cum tempore ipsa fugiat?
-        </p>
-        <div class="skills">
-            <h3 class="skill-title">[SKILLS]</h3>
-            <div>
-                <button class="btn-skills dev active">Development</button>
-                <button class="btn-skills design">Design</button>
-            </div>
-            <div class="skill-content devContent">
-                <div class="box">
-                    <div>
-                        <img src="./img/webdev.svg" alt="">
-                    </div>
-                    <div>
-                        <h4>Web Design & Development</h4>
-                        <p>HTML, CSS, JavaScript, Java</p>
-                    </div>
+    <main id="about">
+        <div class="main">
+            <a id="resume" href="https://drive.google.com/file/d/1YivWVXHMHGp8yP9dccOlED5Z2axwjLgv/view" target="_blank"
+                rel="noopener noreferrer">Resumé</a>
+            <h1 class="titulo">[Ellen Maria]</h1>
+            <h2>Front-End Developer & UI Designer</h2>
+            <div class="about-info">
+                <div>
+                    <h4>Localization</h4>
+                    <p>Bahia, Brazil</p>
                 </div>
-                <div class="box">
-                    <div>
-                        <img src="./img/framework.svg" alt="">
-                    </div>
-                    <div>
-                        <h4>Front-End</h4>
-                        <p>React.js, Vue.js, JQuery, Bootstrap</p>
-                    </div>
+                <div>
+                    <h4>Birthdate</h4>
+                    <p>08/07/2002</p>
                 </div>
-                <div class="box">
-                    <div>
-                        <img src="./img/tools.svg" alt="">
-                    </div>
-                    <div>
-                        <h4>Back-End</h4>
-                        <p>Node.js, Express.js, Mongoose</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div>
-                        <img src="./img/db.svg" alt="">
-                    </div>
-                    <div>
-                        <h4>Database Management System </h4>
-                        <p>MySQL, Postgres MongoDB </p>
-                    </div>
+                <div>
+                    <h4>Language</h4>
+                    <img src="./img/brazil.svg" />
+                    <img src="./img/usa.svg" />
                 </div>
             </div>
-            <div class="skill-content designContent d-none">
-                <div class="box">
-                    <div>
-                        <img src="./img/uidesign.svg" alt="">
+            <p class="p-about">Hi there! Thanks for stopping by! My areas of interest include Web Development, UI/UX
+                Design and Game Design. I'm able to quickly learn new tools and technologies and I like to be
+                well-organized to deliver consistent results. I am looking for job opportunities to grow professionally
+                with an innovation team to provide solutions to different problems.
+            </p>
+            <div class="skills">
+                <h3 class="skill-title">[SKILLS]</h3>
+                <div>
+                    <button class="btn-skills dev active">Development</button>
+                    <button class="btn-skills design">Design</button>
+                </div>
+                <div class="skill-content devContent">
+                    <div class="box">
+                        <div>
+                            <img src="./img/webdev.svg" alt="">
+                        </div>
+                        <div>
+                            <h4>Web Design & Development</h4>
+                            <p>HTML, CSS, JavaScript, Java</p>
+                        </div>
                     </div>
-                    <div>
-                        <h4>UX/UI Design</h4>
-                        <p>Figma, Adobe XD</p>
+                    <div class="box">
+                        <div>
+                            <img src="./img/framework.svg" alt="">
+                        </div>
+                        <div>
+                            <h4>Front-End</h4>
+                            <p>React.js, Vue.js, JQuery, Bootstrap</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div>
+                            <img src="./img/tools.svg" alt="">
+                        </div>
+                        <div>
+                            <h4>Back-End</h4>
+                            <p>Node.js, Express.js, Mongoose</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div>
+                            <img src="./img/db.svg" alt="">
+                        </div>
+                        <div>
+                            <h4>Database Management System </h4>
+                            <p>MySQL, Postgres MongoDB </p>
+                        </div>
                     </div>
                 </div>
-                <div class="box">
-                    <div>
-                        <img src="./img/design.svg" alt="">
+                <div class="skill-content designContent d-none">
+                    <div class="box">
+                        <div>
+                            <img src="./img/uidesign.svg" alt="">
+                        </div>
+                        <div>
+                            <h4>UX/UI Design</h4>
+                            <p>Figma, Adobe XD</p>
+                        </div>
                     </div>
-                    <div>
-                        <h4>Image Edition</h4>
-                        <p>Photoshop, Illustrator, Gimp</p>
+                    <div class="box">
+                        <div>
+                            <img src="./img/design.svg" alt="">
+                        </div>
+                        <div>
+                            <h4>Image Edition</h4>
+                            <p>Photoshop, Illustrator, Gimp</p>
+                        </div>
                     </div>
-                </div>
-                <div class="box">
-                    <div>
-                        <img src="./img/design.svg" alt="">
-                    </div>
-                    <div>
-                        <h4>Video Edition</h4>
-                        <p>Premiere, Filmora</p>
+                    <div class="box">
+                        <div>
+                            <img src="./img/design.svg" alt="">
+                        </div>
+                        <div>
+                            <h4>Video Edition</h4>
+                            <p>Premiere, Filmora</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -139,18 +142,6 @@
                 Feel free to make a pull request!</p>
 
             <div class="repositories">
-                <!-- <div class="repo">
-                    <ul class="repo-ul">
-                        <li class="repo-li">
-                            <h3>Repositorie Name(URL)</h3>
-                            <p>Description</p>
-                        </li>
-                    </ul>
-                    <ul class="tags">
-                        <li><a href="#"></a>DEMO</li>
-                        <li><a href="#"></a>DEMO</li>
-                    </ul>
-                </div> -->
             </div>
             <p class="git-link"><a href="https://github.com/ellenmariadev?tab=repositories" target="_blank"
                     rel="noopener noreferrer"><u>
@@ -158,7 +149,7 @@
         </div>
     </section>
 
-    <footer id="contact">
+    <section id="contact">
         <div class="contact">
             <h1 class="titulo-section">[Contact]</h1>
             <p>Feel free to reach out if you want to build something together, have a question, or just want to connect.
@@ -177,8 +168,10 @@
                 <a href="https://github.com/ellenmariadev" target="_blank" rel="noopener noreferrer"><i
                         class="fa-brands fa-github"> </i><strong> <u>GitHub</u></a></strong>.
             </p>
-            <p class="copyright">© 2022 ELLEN MARIA </p>
         </div>
+    </section>
+    <footer>
+        <p class="copyright">© 2022 Designed & Coded by Ellen Maria </p>
     </footer>
 
     <script src="./js/main.js"></script>
