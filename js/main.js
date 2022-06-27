@@ -86,7 +86,7 @@ getApiGitHub()
 //-------REMOVE HASH-------//
 window.onload = function () {
 
-    const navMenu = document.querySelectorAll('.nav-ul a')
+    const navMenu = document.querySelectorAll('nav a')
 
     navMenu.forEach((link) => {
         link.addEventListener('click', () => {
