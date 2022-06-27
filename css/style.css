@@ -34,6 +34,7 @@ header {
   padding: 20px 10px;
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 a {
@@ -101,6 +102,38 @@ h2 {
   color: rgba(0, 0, 0, 0.56);
   font-weight: 400;
   margin-bottom: 2rem;
+}
+
+.hire {
+  margin-top: 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: #59ff6a;
+  border-radius: 50%;
+  display: inline-block;
+  animation: fadeinout 1.5s linear 1 forwards;
+  animation-iteration-count: infinite;
+  margin-right: 4px;
+}
+
+@keyframes fadeinout {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .about-info {
@@ -271,6 +304,10 @@ h3,
   margin-bottom: 20px;
   font-weight: 700;
   cursor: pointer;
+}
+
+.tags li:hover {
+  filter: brightness(1) opacity(0.8);
 }
 
 .tags li:first-child {

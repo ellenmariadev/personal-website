@@ -81,3 +81,23 @@ function getApiGitHub() {
 }
 
 getApiGitHub()
+
+
+//-------REMOVE HASH-------//
+window.onload = function () {
+
+    const navMenu = document.querySelectorAll('.nav-ul a')
+
+    navMenu.forEach((link) => {
+        link.addEventListener('click', () => {
+            setTimeout(() => {
+                removeHash()
+            })
+        }, 5)
+    })
+
+}
+
+function removeHash() {
+    history.replaceState('', document.title, window.location.pathname);
+}
