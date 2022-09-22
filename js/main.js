@@ -57,7 +57,7 @@ function getApiGitHub() {
 
             let data = await res.json()
 
-            data = [data[2], data[1], data[5], data[0]]
+            data = [data[9], data[12], data[2], data[1]]
 
             data.map(item => {
                 let content = document.createElement('div')
